@@ -1,1 +1,2 @@
+CISCO_ASA_113014 %{SYSLOGTIMESTAMP:timestamp} %{IP:firewall_ip} : %{DATA:syslog_message_id}: %{DATA:error_message} : server =  %{IP:server_ip} : user = %{GREEDYDATA:user}
 CISCO_ASA_113015 %{SYSLOGTIMESTAMP:timestamp} %{IP:firewall_ip} : %{DATA:syslog_message_id}: %{DATA:error_message} = %{GREEDYDATA:reason} : local database : user = %{GREEDYDATA:user} : user IP = %{IP:user_ip}
